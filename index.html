@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Protfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e44b0dd918.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/devlogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contace">Contact</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+
+                    <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1><span style="color:darkblue;">Danial</span><span> karim</span></h1>
+                <p>DevOps Engineer</p>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------------------------------About me------------------------------------------------     -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/paid.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                         Cumque, sunt iure facilis, eligendi ut harum alias delectus, 
+                         tempore facere necessitatibus officia. Tempore earum officiis
+                          consequatur animi sunt, exercitationem possimus rerum.</p>
+
+                          <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                          </div>
+                          <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front-end developer</span><br>Design web interfaces</li>
+                                <li><span>Back-end developer</span><br>Integrating APIs</li>
+                                <li><span>DevOps</span><br>Automations</li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Front-e</span><br>Design web interfaces</li>
+                                <li><span>Back-end developer</span><br>Integrating APIs</li>
+                                <li><span>DevOps</span><br>Automations</li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Front-end dev</span><br>Design web interfaces</li>
+                                <li><span>Back-end developer</span><br>Integrating APIs</li>
+                                <li><span>DevOps</span><br>Automations</li>
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -----------------------------------------Services---------------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Software Automations</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Enim, fuga iure explicabo esse non atque? Ad doloribus 
+                         eum inventore magnam nam fugit, libero, doloremque sit 
+                         veritatis iste architecto nobis quibusdam.</p>
+                         <a href="">Learn more</a>
+                </div>
+
+                <div>
+                    <h2>Automations</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Enim, fuga iure explicabo esse non atque? Ad doloribus 
+                         eum inventore magnam nam fugit, libero, doloremque sit 
+                         veritatis iste architecto nobis quibusdam.</p>
+                         <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Back-End</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Enim, fuga iure explicabo esse non atque? Ad doloribus 
+                         eum inventore magnam nam fugit, libero, doloremque sit 
+                         veritatis iste architecto nobis quibusdam.</p>
+                         <a href="">Learn more</a>
+                </div>
+                <div>
+              
+                    <h2>Python Language</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Enim, fuga iure explicabo esse non atque? Ad doloribus 
+                         eum inventore magnam nam fugit, libero, doloremque sit 
+                         veritatis iste architecto nobis quibusdam.</p>
+                         <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Bash Scripting</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Enim, fuga iure explicabo esse non atque? Ad doloribus 
+                         eum inventore magnam nam fugit, libero, doloremque sit 
+                         veritatis iste architecto nobis quibusdam.</p>
+                         <a href="">Learn more</a>
+                </div>
+                <div>
+                    <h2>AWS Cloud Computing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Enim, fuga iure explicabo esse non atque? Ad doloribus 
+                         eum inventore magnam nam fugit, libero, doloremque sit 
+                         veritatis iste architecto nobis quibusdam.</p>
+                         <a href="">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- ------------------------------My Works Portfolio----------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Protfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/dani.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, nulla!</p>
+                        <a href=""><i class="fa-thin fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/dani.jpg" alt="">
+                    <div class="layer">
+                        <h3>Music</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, nulla!</p>
+                        <a href=""><i class="fa-thin fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/dani.jpg" alt="">
+                     <div class="layer">
+                        <h3>online shopping</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, nulla!</p>
+                        <a href=""><i class="fa-thin fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!-- ------------------------------------Contact----------------------------------------->
+<div id="contace">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contace Me</h1>
+                <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fas fa-regular fa-phone"></i>03475252807</p>
+                <div class="social-icons">
+                    <a href="httpsfacegook:"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+                <a href="images/danial.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit"  class="btn btn2">submit</button>
+                </form>
+                <span id=""msg>hello</span>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>copy-right @ danial karim<p>
+        </div>
+   </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";           
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";           
+        }
+    </script>
+</body>
+</html>
